@@ -4,12 +4,15 @@ public enum LengthUnit implements IMeasurable {
     FEET(12.0),
     INCHES(1.0),
     YARD(36.0),
-    CM(1.0 / 2.54);
+    CM(1.0 / 2.54) ;
+
 
     private final double baseUnitConversionFactor;
 
     LengthUnit(double baseUnitConversionFactor) {
         this.baseUnitConversionFactor = baseUnitConversionFactor;
+
+
     }
 
     @Override
